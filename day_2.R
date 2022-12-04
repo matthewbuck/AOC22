@@ -1,6 +1,6 @@
 library('tidyverse')
 
-input <- 'c:/users/mbbuc/documents/aoc22/day 2/input.txt'
+input <- 'path/to/input'
 
 df <- read_delim(input, delim = '\n', col_names = F) %>%
   separate(X1, c('opp', 'move')) %>%
