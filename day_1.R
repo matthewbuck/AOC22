@@ -1,6 +1,6 @@
 library('tidyverse')
 
-x = 'c:/users/mbbuc/documents/aoc22/Day 1/input.txt'
+x = 'path/to/input'
 df <- read_delim(x, delim = '\n', skip_empty_rows = FALSE, col_names = FALSE, col_types = 'd') %>%
   mutate(group = cumsum(is.na(X1))) %>%
   drop_na(X1) %>%
